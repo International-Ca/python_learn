@@ -1,0 +1,61 @@
+﻿1. 查看文档： shift+tab
+2. 输入输出历史： In Out 
+3. %time %timeit %%time %%timeit  
+
+numpy:
+1. 特点: 数据类型相同的有序的数据集合，如果初始化的数据类型不同，会强制类型统一
+	 优先级： str > float > int
+2. 构造：np.array(list)
+	 np.ones(shape, dtype) #”1“来填充 
+                 np.zeros()  #”0“填充
+                 np.full(shape, dtype, fill_value)  #指定数字填充
+	 np.eye(N) #单位矩阵（矩阵除法）
+	 np.linspace(start, stop, num)  #等差数列  设置个数
+                 np.arange([start], stop, [step]) #等差数列 设置步长
+	 np.random.randint()  #随机整数 size等于shape
+	 np.random.randn() #随机标准正态分布
+	 np.random.normal(loc，scale，size) #普通正态分布 设置期望，方差和size
+	 np.random.random() #生成小数
+	 np.random.permutation() #随机索引
+3. 属性：ndim：维度  
+              shape：形状 
+              size：总长度
+              dtype：元素类型
+4. 索引：访问元素：arr[index1, index2, index3...]
+	 访问行：arr[行索引]
+	 访问列：arr[:,列索引]
+	 特殊访问的方式： 使用列表（索引列表、BOOL列表）
+5. 切片: 在每一个维度上指定切片范围
+	 eg. arr[rowindex1:rowindex2,colindex1:colindex2]
+6. 聚合运算:
+	 sum()  mean()  std()  var()  argmax()  argmin()  np.median() 
+	 any()  all()   经常与逻辑表达式配合，比如查询一组数据中大于均值的所有数
+7. 广播运算：
+	 1. 缺失维度补1
+	 2. 用已有值填充
+	 最终目的：就是保证参与运算的两个数组形状一致
+	 array + num
+8. 排序
+	np.sort() 快速排序、堆排序 
+	np.partition()
+9.变形
+                arr.reshape() 参数是一个元组
+                eg. arr.reshape((4,5))
+10.级联 
+                display(arr1,arr2) 相当于print
+                np.concatenate((arr1,arr2),axis=1) #使用axis控制连接方向，axis指连接的维度
+                np.hastack((arr1,arr2))   #horizontal水平连接
+                np.vastack((arr1,arr2))   #vertical水平连接
+
+         
+
+
+
+
+
+
+
+
+
+
+	 

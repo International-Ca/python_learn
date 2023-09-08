@@ -1,0 +1,25 @@
+﻿1. 数据阶段 要使用的编译器 jupyter notebook
+
+2. 数据阶段：
+	AI 初级
+	AI 体系： google alphago 深度学习框架
+		  商业领域： 推荐系统 人脸识别 验证码识别  BI（数据分析）（偏运维）
+		  工业领域： 智能驾驶 语义识别 情感分析 目标检测 (偏重算法开发) 研究生 博士
+	数学基础（大一大二）
+	python 基本库： (numpy pandas)数据分析+人工智能的基础
+			 sklearn 数据挖掘 + 人工智能的基础
+			 tensorflow 深度学习框架
+	可视化工具：    Matplotlib、 seaborn、 Excel、POWERBI、Tableau、SPSS
+	
+	python是综合学科： python-web 爬虫 数据分析
+			   数据分析岗 监控数据 给出一些决策建议（商业数据分析模式）（10K-15K）
+
+3. 课前准备：
+	安装 pip install jupyter -i
+	安装 pip install numpy -i 
+	安装 anaconda[不急]
+	打开终端： 输入 jupyter notebook 回车
+
+4. jupyter notebook 
+	是一个集文本、代码、绘图于一身的轻量级的文本编译器，它是基于ipython的，适合展示数据分析的过程
+	
